@@ -2,7 +2,7 @@
 An automatic Summarizer that using Extractive Summarization Technique to find the Summary of n sentences
 ### Module Description:
  #### 1. Function to find the frequency of the words in the sentences of the corpus
-   The function removes the punctuations and unnecessary symbols and uses word tokenizer from NLTK to tokenize the words of the sentence. Then it finds the lemmas of the words using WordnetLemmatizer which is required to bring all the words into lemma form, thus removing ambiguities. After all these preprocessing, it creates a frequency table(dictionary based) which contain the frequency of the words according to the occurrence in the text.This process is continued for all the words in the corpus to design the word frequency table and a dictionary containing all the words and their frequency is returned.
+   The function removes the punctuations and unnecessary symbols and uses word tokenizer from NLTK to tokenize the words of the sentence. Then it finds the stems of words using PorterStemmer to removing ambiguities. After all these preprocessing, it creates a frequency table(dictionary based) which contain the frequency of the words according to the occurrence in the text.This process is continued for all the words in the corpus to design the word frequency table and a dictionary containing all the words and their frequency is returned.
      
 #### 2. Function to find the score of each sentence based on word frequency table
   This function uses a dictionary to store the sentences as well as their individual scores. The sentence score is calculated based on the individual word scores that it contains, that is,
