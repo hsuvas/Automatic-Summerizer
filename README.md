@@ -2,7 +2,7 @@
 An automatic Summarizer that using Extractive Summarization Technique to find the Summary of n sentences
 ### Module Description:
  #### 1. Function to find the frequency of the words in the sentences of the corpus
-   The function removes the punctuations and unnecessary symbols and uses word tokenizer from NLTK to tokenize the words of the sentence. Then it finds the stems of words using PorterStemmer to removing ambiguities. After all these preprocessing, it creates a frequency table(dictionary based) which contain the frequency of the words according to the occurrence in the text.This process is continued for all the words in the corpus to design the word frequency table and a dictionary containing all the words and their frequency is returned.
+   The function removes the punctuations and unnecessary symbols and uses word tokenizer from NLTK to tokenize the words of the sentence. After all these preprocessing, it creates a frequency table(dictionary based) which contain the frequency of the words according to the occurrence in the text.This process is continued for all the words in the corpus to design the word frequency table and a dictionary containing all the words and their frequency is returned.
      
 #### 2. Function to find the score of each sentence based on word frequency table
   This function uses a dictionary to store the sentences as well as their individual scores. The sentence score is calculated based on the individual word scores that it contains, that is,
@@ -15,8 +15,7 @@ An automatic Summarizer that using Extractive Summarization Technique to find th
    This function organizes the summary based on the occurrence of sentences in the text for user's convenience. The highest ranked sentences from the previous function is considered and matched with the text, according to which the sentences are ordered and joined together to find the summary. The number of sentences in the summary is equal to n, which is considered as user input.
 
 ## The Process
-  
-   1. Read the first 1000000 lines of the corpus using read()
+   1. Read the first 1000000 lines of the corpus.
    2. Call create_frequency_table() for preprocessing and find the word frequency. A wordFrequency table is returned.
    3. Call score_sentences() to find the score of the individual senteneces. The set of sentences from the corpus, the frequency of the words are passed to the function. A dictionary of sentences and their individual scores are returned.
    4. Call find_high_score() to find the highest ranked sentences which takes sentences,sentence scores and number of sentences(n) and returns the dictionary with the highest scored n sentences where n is the user input.
