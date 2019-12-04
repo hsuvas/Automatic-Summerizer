@@ -20,3 +20,9 @@ An automatic Summarizer that using Extractive Summarization Technique to find th
    3. Call score_sentences() to find the score of the individual senteneces. The set of sentences from the corpus, the frequency of the words are passed to the function. A dictionary of sentences and their individual scores are returned.
    4. Call find_high_score() to find the highest ranked sentences which takes sentences,sentence scores and number of sentences(n) and returns the dictionary with the highest scored n sentences where n is the user input.
    5. Call gen_summary() to create the summary of n sentences. the parameters given are set of sentences, the result from step 4 and number of sentences in which the summary is sought by the user and it returns the summary according to the occurrence of sentences in the text.
+
+## How to Execute the script
+  1. Change the path of the corpus file in Cell 6(last cell) line 1 [ with open("path") as...]
+  2. Execute each cell one by one from the top.
+  3. At the last cell, it will ask "how many sentence summary do you need?". Put the number as reqd (example:6000).
+  4. the result should come right below that dialogue box.
