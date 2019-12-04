@@ -18,3 +18,7 @@ An automatic Summerizer that using Extractive Summerization Technique to find th
    
 #### 3. Function to find  the Highest scored sentences
   This function also uses a dictionary to store the highest scored sentences.  It considers three parameters, the set of sentences, the scores and the number of sentences in the summary that user wants. Then it sorts the sentences in descending order using sorted() and stores the highest scored n sentences in the dictionary and returns it.  
+#### 4. Function to organize the summary 
+   This function organizes the summary based on the occurance of sentences in the text for user's convenience. The highest ranked sentences from the previous function is considered and matched with the text, according to which the sentences are ordered and joined together to find the summary. The number of sentences in the summary is equal to n, which is considered as user input.
+
+
