@@ -24,6 +24,7 @@ An automatic Summerizer that using Extractive Summerization Technique to find th
 ## The Process
   
    1. Read the first 1000000 lines of the corpus using read()
-   2. Call the word frequency () for preprocessing and find the word frequency. A wordFrequency table is returned.
-   3. Call the sentence score() to find the score of the individual senteneces. The set of sentences from the corpus, the frequency of the words are passed to the function. A dictionary of sentences and their individual scores are returned.
-   4. The highest ranked sentences from the dictionary returned in step 3
+   2. Call create_frequency_table() for preprocessing and find the word frequency. A wordFrequency table is returned.
+   3. Call score_sentences() to find the score of the individual senteneces. The set of sentences from the corpus, the frequency of the words are passed to the function. A dictionary of sentences and their individual scores are returned.
+   4. Call find_high_score() to find the highest ranked sentences which takes sentences,sentence scores and number of sentences(n) and returns the dictionary with the highest scored n sentences where n is the user input.
+   5. Call gen_summary() to create the summary of n sentences. the parameters given are set of sentences, the result from step 4 and number of sentences in which the summary is sought by the user. 
